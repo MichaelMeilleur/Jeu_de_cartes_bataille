@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="utf-8" />
+    <meta name="authors" content="Mahdi Ellili , Michael Meilleur et Xavier Côté-Daviau">
+    <meta name="keywords" content="Jeu de cartes">
+    <meta name="description" content="Jeu de cartes - La bataille simplifiée">
+    <title>Jeu de cartes - La bataille simplifiée</title>
+    <link rel="icon" href="Images/logo.jpg">
+    <link href="Styles/css/styles.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div id="message" class="row" style="display:none;height:25px;font-size:20px;text-align:center;">
+
+        </div>
+        <div class="cartes_debut row">
+            <div class="source_ordinateur col-6">
+                <div id="PileOrdi" class="cartes Carte-Dessu">
+                    <!-- ICI LA PILE DE L'ORDI' -->
+                </div>
+            </div>
+            <div class="stats_ordinateur col-6">
+                <h2 style="padding-top:30px;">Ordinateur:</h2>
+                <div class="cartes_ordinateur">
+                    <h4>#Cartes:</h4>
+                    <div id="valeur_cartes_ordinateur" style="font-size: 25px; margin-left: 70px;">0</div>
+                </div>
+                <div class="cartes_tournées_ordinateur">
+                    <h4>#Tournées:</h4>
+                    <div id="valeur_cartes_tournées_ordinateur" style="font-size:25px; margin-left:40px;">0</div>
+                </div>
+                <div class="cartes_total_ordinateur">
+                    <h4>#Total:</h4>
+                    <div id="valeur_total_ordinateur" style="font-size: 25px; margin-left: 85px;">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="destination_ordinateur col-6">
+                <div id="CarteOrdi" class="cartes Pile">
+                    <!-- ICI LA CARTE DE L'ORDI -->
+                </div>
+            </div>
+            <div id="RebrasserOrdi" class="col-6 bataille" style="font-size:28px; color:yellow;">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="destination_joueur col-6">
+                <div id="CarteJoueur" class="cartes Pile">
+                    <!-- ICI LA CARTE DU JOUEUR -->
+                </div>
+            </div>
+            <div class="stats_joueur col-6">
+                <div class="stats_joueur col-6">
+                    <h2 style="padding-top:30px;">Joueur:</h2>
+                    <div class="cartes_joueur">
+                        <h4>#Cartes:</h4>
+                        <div id="valeur_cartes_joueur" style="font-size: 25px; margin-left: 70px;">0</div>
+                    </div>
+                    <div class="cartes_tournées_joueur">
+                        <h4>#Tournées:</h4>
+                        <div id="valeur_cartes_tournées_joueur" style="font-size:25px; margin-left:40px;">0</div>
+                    </div>
+                    <div class="cartes_total_joueur">
+                        <h4>#Total:</h4>
+                        <div id="valeur_total_joueur" style="font-size: 25px; margin-left: 85px;">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="destination_joueur col-6">
+                <div id="PileJoueur" class="cartes Carte-Dessu">
+                    <!-- ICI LA PILE DU JOUEUR -->
+                </div>
+            </div>
+            <div id="RebrasserJoueur" class="col-6 bataille" style="font-size:28px; color:yellow;">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="lib/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+    <script>
+        function supporter_classes() {
+            try {
+                Function('class test {#_champ_test;}')();
+                return true;
+            }
+            catch (e) {
+                return false;
+            }
+        }
+        if (supporter_classes() == false) {
+            $('#message').html('ERREUR: Les classes ne sont pas supportées sur ce navigateur!');
+            $('#message').css('display', 'block'); // Afficher le message
+            $('#message').css('background-color', 'yellow');
+            $('#message').css('color', 'red');
+            $('#message').css('width', '100%');
+        }
+    </script>
+    <script type="module">
+        import { Bataille } from "/js/bataille.js"
+        import { Cartes } from "/js/cartes.js"
+        import { Joueur } from "/js/joueur.js"
+        $(document).ready(function () {
+            let b1 = new Bataille();
+            let player = new Joueur();
+            let robot = new Joueur();
+
+            b1.Initier_cartes();
+            b1.Distribuer_cartes();
+
+            $('#RebrasserJoueur').click(function () {
+                b1.Rebrasser_cartes(player, robot);
+            });
+
+            $('#RebrasserOrdi').click(function () {
+                b1.Rebrasser_cartes(player, robot);
+            });
+
+            $('#PileJoueur').click(function () {
+
+                b1.Tourner_cartes(player, robot);
+
+            });
+
+
+        });
+    </script>
+</body>
+</html>

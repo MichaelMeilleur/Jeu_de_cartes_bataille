@@ -1,0 +1,64 @@
+﻿body {
+    background-image: url('../../Images/fond1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    border: 7px solid black;
+    background-color: darkgreen;
+    height: 775px;
+    width: 1050px !important;
+}
+
+.row {
+    height: 155px;
+    margin-bottom: 20px;
+}
+
+.stats_ordinateur, .stats_joueur {
+    color: white;
+}
+
+*[class^="cartes"] {
+    display: flex;
+}
+
+.Carte-Dessu {
+    background-image: url('../../Images/Cartes/DessusCarte.png')
+}
+
+.Pile {
+    background-image: url('../../Images/Cartes/PaquetVide.png')
+}
+
+.cartes {
+    margin-left: 180px;
+    width: 150px;
+    height: 230px;
+    background-size: 100% 100%;
+    transform: rotate(90deg);
+}
+
+@for $i from 2 through 14 {
+    .Carreau-#{$i} {
+        background-image: url(../../Images/Cartes/Carreau-#{$i}.png)
+    }
+
+    .Trefle-#{$i} {
+        background-image: url(../../Images/Cartes/Trefle-#{$i}.png)
+    }
+
+    .Coeur-#{$i} {
+        background-image: url(../../Images/Cartes/Coeur-#{$i}.png)
+    }
+
+    .Pique-#{$i} {
+        background-image: url(../../Images/Cartes/Pique-#{$i}.png)
+    }
+}

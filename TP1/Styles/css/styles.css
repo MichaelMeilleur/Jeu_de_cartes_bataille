@@ -1,0 +1,254 @@
+﻿body {
+  background-image: url("../../Images/fond1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  border: 7px solid black;
+  background-color: darkgreen;
+  height: 775px;
+  width: 1050px !important;
+}
+
+.row {
+  height: 155px;
+  margin-bottom: 20px;
+}
+
+.stats_ordinateur, .stats_joueur {
+  color: white;
+}
+
+*[class^=cartes] {
+  display: flex;
+}
+
+.Carte-Dessu {
+  background-image: url("../../Images/Cartes/DessusCarte.png");
+}
+
+.Pile {
+  background-image: url("../../Images/Cartes/PaquetVide.png");
+}
+
+.cartes {
+  margin-left: 180px;
+  width: 150px;
+  height: 230px;
+  background-size: 100% 100%;
+  transform: rotate(90deg);
+}
+
+.Carreau-2 {
+  background-image: url(../../Images/Cartes/Carreau-2.png);
+}
+
+.Trefle-2 {
+  background-image: url(../../Images/Cartes/Trefle-2.png);
+}
+
+.Coeur-2 {
+  background-image: url(../../Images/Cartes/Coeur-2.png);
+}
+
+.Pique-2 {
+  background-image: url(../../Images/Cartes/Pique-2.png);
+}
+
+.Carreau-3 {
+  background-image: url(../../Images/Cartes/Carreau-3.png);
+}
+
+.Trefle-3 {
+  background-image: url(../../Images/Cartes/Trefle-3.png);
+}
+
+.Coeur-3 {
+  background-image: url(../../Images/Cartes/Coeur-3.png);
+}
+
+.Pique-3 {
+  background-image: url(../../Images/Cartes/Pique-3.png);
+}
+
+.Carreau-4 {
+  background-image: url(../../Images/Cartes/Carreau-4.png);
+}
+
+.Trefle-4 {
+  background-image: url(../../Images/Cartes/Trefle-4.png);
+}
+
+.Coeur-4 {
+  background-image: url(../../Images/Cartes/Coeur-4.png);
+}
+
+.Pique-4 {
+  background-image: url(../../Images/Cartes/Pique-4.png);
+}
+
+.Carreau-5 {
+  background-image: url(../../Images/Cartes/Carreau-5.png);
+}
+
+.Trefle-5 {
+  background-image: url(../../Images/Cartes/Trefle-5.png);
+}
+
+.Coeur-5 {
+  background-image: url(../../Images/Cartes/Coeur-5.png);
+}
+
+.Pique-5 {
+  background-image: url(../../Images/Cartes/Pique-5.png);
+}
+
+.Carreau-6 {
+  background-image: url(../../Images/Cartes/Carreau-6.png);
+}
+
+.Trefle-6 {
+  background-image: url(../../Images/Cartes/Trefle-6.png);
+}
+
+.Coeur-6 {
+  background-image: url(../../Images/Cartes/Coeur-6.png);
+}
+
+.Pique-6 {
+  background-image: url(../../Images/Cartes/Pique-6.png);
+}
+
+.Carreau-7 {
+  background-image: url(../../Images/Cartes/Carreau-7.png);
+}
+
+.Trefle-7 {
+  background-image: url(../../Images/Cartes/Trefle-7.png);
+}
+
+.Coeur-7 {
+  background-image: url(../../Images/Cartes/Coeur-7.png);
+}
+
+.Pique-7 {
+  background-image: url(../../Images/Cartes/Pique-7.png);
+}
+
+.Carreau-8 {
+  background-image: url(../../Images/Cartes/Carreau-8.png);
+}
+
+.Trefle-8 {
+  background-image: url(../../Images/Cartes/Trefle-8.png);
+}
+
+.Coeur-8 {
+  background-image: url(../../Images/Cartes/Coeur-8.png);
+}
+
+.Pique-8 {
+  background-image: url(../../Images/Cartes/Pique-8.png);
+}
+
+.Carreau-9 {
+  background-image: url(../../Images/Cartes/Carreau-9.png);
+}
+
+.Trefle-9 {
+  background-image: url(../../Images/Cartes/Trefle-9.png);
+}
+
+.Coeur-9 {
+  background-image: url(../../Images/Cartes/Coeur-9.png);
+}
+
+.Pique-9 {
+  background-image: url(../../Images/Cartes/Pique-9.png);
+}
+
+.Carreau-10 {
+  background-image: url(../../Images/Cartes/Carreau-10.png);
+}
+
+.Trefle-10 {
+  background-image: url(../../Images/Cartes/Trefle-10.png);
+}
+
+.Coeur-10 {
+  background-image: url(../../Images/Cartes/Coeur-10.png);
+}
+
+.Pique-10 {
+  background-image: url(../../Images/Cartes/Pique-10.png);
+}
+
+.Carreau-11 {
+  background-image: url(../../Images/Cartes/Carreau-11.png);
+}
+
+.Trefle-11 {
+  background-image: url(../../Images/Cartes/Trefle-11.png);
+}
+
+.Coeur-11 {
+  background-image: url(../../Images/Cartes/Coeur-11.png);
+}
+
+.Pique-11 {
+  background-image: url(../../Images/Cartes/Pique-11.png);
+}
+
+.Carreau-12 {
+  background-image: url(../../Images/Cartes/Carreau-12.png);
+}
+
+.Trefle-12 {
+  background-image: url(../../Images/Cartes/Trefle-12.png);
+}
+
+.Coeur-12 {
+  background-image: url(../../Images/Cartes/Coeur-12.png);
+}
+
+.Pique-12 {
+  background-image: url(../../Images/Cartes/Pique-12.png);
+}
+
+.Carreau-13 {
+  background-image: url(../../Images/Cartes/Carreau-13.png);
+}
+
+.Trefle-13 {
+  background-image: url(../../Images/Cartes/Trefle-13.png);
+}
+
+.Coeur-13 {
+  background-image: url(../../Images/Cartes/Coeur-13.png);
+}
+
+.Pique-13 {
+  background-image: url(../../Images/Cartes/Pique-13.png);
+}
+
+.Carreau-14 {
+  background-image: url(../../Images/Cartes/Carreau-14.png);
+}
+
+.Trefle-14 {
+  background-image: url(../../Images/Cartes/Trefle-14.png);
+}
+
+.Coeur-14 {
+  background-image: url(../../Images/Cartes/Coeur-14.png);
+}
+
+.Pique-14 {
+  background-image: url(../../Images/Cartes/Pique-14.png);
+}
